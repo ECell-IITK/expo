@@ -29,9 +29,10 @@ li {
 }
 
 li img {
-  width: 7px;
-  background-color: white;
+  width: 20px;
+  background-color: rgb(142, 176, 210);
   box-shadow: 0px 0px 8px 3px rgb(50 78 154);
+  margin: 0 8px;
 }
 
 .common {
@@ -321,12 +322,17 @@ li img {
   font-size: large;
   text-transform: uppercase;
 }
-
+.comp-cont h3{
+  font-weight: 200;
+  color: whitesmoke;
+}
 .comp-cont {
   font-family: 'Roboto';
   /* padding: ; */
+  color: whitesmoke;
   font-size: 12px;
   line-height: 19px;
+  font-weight: 10;
   text-align: justify;
   display: flex;
   /* justify-content: flex-start; */
@@ -393,7 +399,7 @@ li img {
 
 .who-img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 40%;
   margin: 20px;
@@ -411,14 +417,11 @@ li img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* font-size: 36px; */
   margin: 20px;
-  line-height: 25px;
+  /* line-height: 45px; */
 }
 
-.who-img img {
-  /* width: 69%; */
-
-}
 
 .who-content h1 {
   font-size: 36;
@@ -426,6 +429,8 @@ li img {
 
 .who-content li {
   padding-left: 20px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 @media(max-width:900px) {
@@ -433,6 +438,13 @@ li img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .who-content li{
+    font-size: 22px;
+    line-height: 35px;
+  }
+  li img{
+    width: 10px;
   }
 }
 
@@ -443,6 +455,13 @@ li img {
 
   .who-heading {
     text-align: center;
+  }
+  .who-content li{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  li img{
+    width: 10px;
   }
 }
 
@@ -517,6 +536,10 @@ li img {
 
 .tnc-cont li {
   padding-left: 20px;
+}
+
+.tnc-cont li img{
+  width: 12px;
 }
 
 .tnc-cont p {
@@ -1474,7 +1497,9 @@ a {
   align-items: flex-start;
   padding: 30px 10px;
   border: 3px solid rgb(63, 145, 227);
+  box-shadow: 0px 0px 18px 5px rgb(71, 109, 213);
 }
+
 
 .pri-box hr {
   width: 100%;
@@ -1500,7 +1525,9 @@ a {
   height: 38px;
   margin: 0px 2% 0px 2%;
 }
-
+.cross{
+  color: red;
+}
 .pri-line p {
   font-size: 18px;
   color: white;
