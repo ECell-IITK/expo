@@ -1492,6 +1492,7 @@ a {
 .pri-box {
   margin: 20px 5%;
   width: 38vw;
+  height: 590px;
   max-width: 350px;
   min-width: 250px;
   align-items: flex-start;
@@ -1531,7 +1532,7 @@ a {
 .pri-line p {
   font-size: 18px;
   color: white;
-  width: max-content;
+  width: 236px;
 }
 
 @media only screen and (max-width: 768px) {
