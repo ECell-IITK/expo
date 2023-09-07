@@ -1,0 +1,192 @@
+/* #testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.testimonial-heading{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.testimonial-person-row_1{
+    display: grid;
+    place-items: center;
+}
+
+.testimonial-person-row_2{
+    display: grid;
+    place-items: center;
+}
+
+.testimonial-persons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonial-person{
+    box-shadow: 0px 0px 18px 5px rgb(139, 143, 153);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 45%;
+    height: 300px;
+    background-image: url("Images/testimonial_background.jpg");    
+    background-image: linear-gradient(45deg, rgb(31 19 19), #0af2f2);
+    backdrop-filter: blur(20px); 
+    object-fit: contain;    
+    transition: transform 700ms;
+}
+
+.testimonial-person:hover{
+    transform: scale(1.05);
+}
+
+.testimonial-person-name{
+    text-align: center;
+    color: rgb(195, 13, 198);
+    font-size: 20px;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.testimonial-person-message{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 15px;
+}
+
+.testimonial-person-desigination{
+    text-align: end;
+    color: blueviolet;
+    margin-top: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+ */
+
+
+#Testimonial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.testimonial-heading {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    background: linear-gradient(180deg, #0B75D3 27.40%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+}
+
+
+.testimonial-container-row_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 15px;
+}
+
+.testimonial-container-row_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 470px;
+    /* margin: 25px 75px; */
+    box-shadow: 2px 2px 30px rgba(31, 28, 191, 0.1);
+    background-color: #ffff;
+    cursor: pointer;
+    transition: transform 700ms;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+    /* padding: 10px; */
+}
+
+.testimonial-container:hover {
+    /* transform: scale(1.1); */
+}
+
+.testimonial-person-profile {
+    display: flex;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* background-image: linear-gradient(to bottom right, #575757, black); */
+}
+
+.testimonial-person-image {
+    transition: transform 700ms;
+}
+
+.testimonial-person-image img {
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.testimonial-person-image:hover {
+    transform: scale(1.5);
+}
+
+.testimonial-person-name {
+    display: flex;
+    align-items: flex-start;
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+}
+
+.testimonial-person-comment {
+    /* margin: 5px 0px; */
+    padding: 10px;
+}
+
+.testimonial-person-comment p {
+    /* margin-left: 10px; */
+}
+
+.testimonial-person-post {
+    /* margin-top: 5px; */
+    padding: 10px;
+}
+
+.testimonial-person-post strong {
+    /* margin-left: 20px; */
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.testimonial-person-post p {
+    /* margin: 0px 0px 2px 20px; */
+}
