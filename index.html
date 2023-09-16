@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-  <!--- basic page needs
-   ================================================== -->
   <meta charset="utf-8" />
   <title>Startup Expo 2023 | E-Cell IIT Kanpur</title>
   <meta name="description" content="StartupExpo is a startups exhibition event, welcoming all the top-notch Startups, Investors, Speakers,
@@ -16,7 +14,7 @@
   <meta http-equiv="pragma" content="no-cache" />
 
   <!---Open Graph metas for social media=======================================-->
-  <meta property="og:image" content="img/st-expo" />
+  <meta property="og:image" content="Images/st-expo" />
   <meta property="og:title" content="Startup Expo 2023 | E-Cell IITK" />
   <meta property="og:url" content="https://www.ecelliitk.org/esummit" />
   <meta property="og:description" content="StartupExpo is a startups exhibition event, welcoming all the top-notch Startups, Investors, Speakers,
@@ -24,583 +22,639 @@
 
   <meta property="twitter:description" content="StartupExpo is a startups exhibition event, welcoming all the top-notch Startups, Investors, Speakers,
      Organizations and attendees from all over India." />
-  <meta name="twitter:image" content="img/st-expo" />
+  <meta name="twitter:image" content="Images/st-expo" />
   <meta name="twitter:title" content="Startup Expo 2023 | E-Cell IITK" />
   <meta property="twitter:url" content="https://www.ecelliitk.org/esummit" />
+  <link rel="shortcut icon" href="Images/logo ecell.png" type="image/x-icon" />
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Startup Expo</title>
-  <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="stylesheet" href="CSS/vendor.css" />
-  <link rel="stylesheet" href="CSS/home.css" />
-  <link rel="stylesheet" href="CSS/particle.css" />
-  <link rel="shortcut icon" href="img/E_Cell_Logo.png" type="image/x-icon" />
-  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/mobile.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Montserrat:wght@700&family=Poppins&family=Quattrocento+Sans&family=Ramabhadra&family=Roboto&display=swap"
-    rel="stylesheet">
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="prefetch" href="img/home.png" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="conclave.css">
+  <link rel="stylesheet" href="testimonial.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
 </head>
 
 <body>
-  <div style="
-        background-color: rgb(0, 0, 0, 0.8);
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-      " class="dull"></div>
-  <!-- Home Section  -->
-  <div class="navlinks mobile-list vclassresp">
-    <ul>
-      <div class="nav-close-btn"></div>
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#competition">WHY EXPO</a></li>
-      <li><a href="#exh-map">MAP</a></li>
-      <li><a href="#pricing">STALLS</a></li>
-      <!-- <li><a href="#speakers">SPEAKERS</a></li> -->
-      <li>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform?usp=sf_link" target="_blank" style="
-              background-color: white;
-              color: black;
-              padding: 10px;
-              border-radius: 5px;
-            ">Register Now</a>
-      </li>
-    </ul>
-  </div>
-  <nav class="navbar background navback hnavresp">
-    <a href="/"><img src="img/logo ecell.png" alt="" class="src" style="width: 50px" /></a>
-    <div class="navlinks navlist vclassresp">
-      <ul>
-        <div class="nav-close-btn"></div>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#competition">WHY EXPO</a></li>
-        <!-- <li><a href="#competition">COMPETITIONS</a></li> -->
-        <li><a href="#exh-map">MAP</a></li>
-        <li><a href="#pricing">STALLS</a></li>
-        <!-- <li><a href="#sponsors">SPONSORS</a></li> -->
+  <header>
+    <nav>
+      <a class="navbar-brand" href="https://www.ecelliitk.org/" id="logo">
+        <div>
+          <img src="./images/logo ecell.png" class="d-inline-block align-top" alt="" height="40px">
+        </div>
+        <div class="logo-text">
+          <br> ENTREPRENEURSHIP CELL <br> IIT KANPUR
+        </div>
+      </a>
+      <i class="fas fa-bars" id="ham-menu"></i>
+      <ul id="nav-bar">
         <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform?usp=sf_link" target="_blank" style="
-                background-color: white;
-                color: #0B75D3;
-                padding: 10px;
-                border-radius: 5px;
-              ">Register Now</a>
-
+          <i class="fas fa-times bar-inside" id="ham-menu"></i>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <!-- <li>
+          <a href="#timeline">TIMELINE</a>
+        </li> -->
+        <li>
+          <a href="#incentives">INCENTIVES</a>
+        </li>
+        <li>
+          <a href="#contactUs">CONTACT US</a>
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform">REGISTER</a>
         </li>
       </ul>
-    </div>
 
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
-
-  <section id="home">
-    <!-- <div class="hp-bg">
-        <img src="img/home.png" alt="">
-      </div> -->
-      
-    <div class="homepage">
-
-      <div class="home-main">
-        <!-- <div class="hp-img">
-            <img class="animate-intro" src="img/lg.png" alt="" />
-          </div> -->
-          <!-- ======= Hero Section ======= -->
- 
-
-      <!-- partial:index.partial.html -->
-      
-      <img src="./img/e-summit-23.png" alt="" class="type-face">
-        <div class="hp-content" style="display: flex; flex-direction: column; align-items: center;">
-          <!-- <div><img src="img/e summit logo brown.png" class="hp-summit"></div> -->
-          <h1>STARTUP EXPO</h1>
-          <h2>AN ESOTERIC ENCLAVE</h2>
-          <img src="img/st-expo.png" alt="">
-        </div>
-        <div class="hp-btn">
-          <!-- <button class="home-btn">Get Merchandise</button> -->
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform?usp=sf_link" target="_blank"><button class="home-btn colo">Register
-              Now</button></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="for-bg">
-    <section id="about">
-      <div class="common">
-        <div class="abo">
-          <!-- <div class="gear">
-                    <img src="img/block.png" alt="">
-                </div> -->
-          <div class="abo-main">
-            <!-- <div class="abo-img">
-                        <img  class="gear-img"src="img/gear.png" alt="">
-                        <div class="triangle">
-                            <img style="    position: relative; top: -85px;"  src="img/triangle1.png" alt="">
-                            <img src="img/triangle2.png" alt="">
-                        </div>
-                    </div> -->
-            <div class="heading">
-              <h1>ABOUT E-CELL IIT KANPUR</h1>
-            </div>
-            <div class="para" style="text-align: justify;">
-              <!-- <img class="para-img-1" src="img/exp-ellipse.png" alt=""> -->
-              <p>
-                Entrepreneurship Cell, IIT Kanpur is an enthusiastic bunch of students who are working to induce an
-                entrepreneurial mindset into the community and to air an innovative streak in them. In a world where
-                entrepreneurship is growing as one of the biggest buzzwords, we are here to water the ideas in buds and
-                help them bloom into impactful endeavors. E-Cell effectively networks student enterprises from campus to
-                incubators, angel investors and venture capitalists to transform the newly proposed ideas into
-                successful startups. We are working towards building an inspired Gen-Next who has the inbuilt urge to
-                innovate, take risks, shoulder social responsibility and indulge in the creative execution of their
-                vibrant ideas.
-              </p>
-              <!-- <img class="para-img-2" src="img/exp-ellipse.png" alt=""> -->
-            </div>
-            <div class="heading">
-              <h1>ABOUT STARTUP EXPO</h1>
-            </div>
-            <div class="para" style="margin-bottom: 6%; text-align: justify;">
-              <!-- <img class="para-img-1" src="img/exp-ellipse.png" alt=""> -->
-              <p>
-                StartupExpo is a startups exhibition event, welcoming all the top-notch Startups, Investors, Speakers,
-                Organizations and attendees from all over India. The event willprovide an amazing platform for startups
-                to showcase their innovative products with the rest of the people thereby connecting them to an amazing
-                community to help propel their growth. The interested startups should fill this form:
-              </p>
-              <!-- <img class="para-img-2" src="img/exp-ellipse.png" alt=""> -->
-            </div>
-            <div class="abo-btn colo">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform?usp=sf_link" target="_blank"><button>Register Here</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="competition">
-      <!-- <video autoplay muted loop class="video-bg">
-        <source src="bg-video/competitions.mp4" type="video/mp4" />
-        Your browser does not support video tag.
-      </video> -->
-      <div class="Competition common item-wrap">
-        <div class="heading">
-          <h1>WHY STARTUP EXPO</h1>
-        </div>
-        <div class="comp-row">
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>STALLS FOR SHOWCASE</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>Startups will be provided stalls along with the necessary provisions (special provisions can be
-                provided) to showcase their cutting edge technologies. The stalls will be located at prime locations
-                with the visibility of more that 15k+ people.</h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>Product Launch/stage showcase</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>Companies will be provided with an opportunity to launch their product in front of a diverse community
-                attending E-Summit consisting of top investors, VC’s, Corporate Leaders and esteemed faculty (Details
-                can be found below).
-              </h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>Pitching opportunities</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>Along with the flow of Startup Expo pitching events and other buzz events will be organized where
-                startups would have an opportunity to pitch in front of a panel composed of Venture capitalists and
-                other dignitaries, to secure a chance of funding and mentoring opportunity.</h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>One on one mentoring and fundraising opportunities</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>Mentoring stations will be set up at the Expo where startups can secure a chance of having one on one
-                mentoring/networking with the top dignitaries and corporate leaders at E-Summit’22.
-              </h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>Validation from E-Summit Dignitaries</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>E-Summit has hosted some of the renowned personalities in the world including the likes of Late Dr. A.
-                P. J. Abdul Kalam (Former President of India), Michael Siebel (CEO, Y Combinator), Kunal Shah (Founder,
-                CRED), Ankush Sachdeva (CEO, ShareChat), Saurabh Goel (President, Havells) among many others.
-              </h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>IIT Kanpur Incubators</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>IIT Kanpur is the home to not one but two of India’s finest incubators; SIDBI Innovation and
-                Incubation Centre (SIIC), C3iHub IIT Kanpur.
-              </h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>E-Summit Coverage</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>E-Summit’22, the annual entrepreneurial flagship event of IIT Kanpur, with over 20,000 footfalls, has
-                evolved into a permanent fixture in the calendars of all the premier colleges of India. E-Summit has
-                been covered and advertised by Television channels and Newspapers.
-              </h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>Media coverage</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>Along with the branding and advertisement via the media coverage of E-Summit’22, Startup Expo will
-                also be featured in a special coverage, with personalized interviews of each of the participating
-                startups.
-              </h3>
-            </div>
-          </div>
-          <div class="comp-card card">
-            <div class="comp-head">
-              <h1>Opportunity to hire from the IIT Kanpur student community</h1>
-            </div>
-            <div class="comp-cont">
-              <h3>Startups will also have special provisions to hire from the student community at IIT Kanpur, including
-                UGs, PGs, PhDs specializing in various domains including technical, non-technical, core-engineering,
-                humanities and social sciences.
-              </h3>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div id="event-popup-container"></div>
-    </section>
-
-    <!-- Workshops -->
-    <section id="who-will">
-      <div class="who">
-        <!-- <div class="who-img">
-          <img src="img/st-expo.png" alt="">
+    </nav>
+  </header>
+  <div class="landing-page">
+    <!-- <div class="header">
+            <img src="./Images/IITK_white 1.png" alt="IITK logo" class="iitk-logo">
+            <img src="./Images/logo esummit 2 4 (1).png" alt="E-Summit logo" class="esummit-logo">
         </div> -->
-        <div class="who-content">
-          <div class="who-heading heading">
-            <h1>WHO WILL ATTEND</h1>
-          </div>
+    <div class="esummit-text-box">
+      <img src="./Images/Group 2489.png" alt="E-Summit'23" class="esummit-text">
+    </div>
+    <div class="startup-text">
+      <img src="./Images/STARTUP (1).png" alt="" srcset="">
+    </div>
+    <div class="expo-landing">
+      <img src="./Images/Expo coming soon (1).png" alt="EXPO">
+      <div class="expo-landing-text">
+        PARADIGM OF POSSIBILITIES
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform"
+          target="_blank">
+          <button class="register-now-landing-page" style="color: white;">
+            REGISTER NOW
+          </button>
+        </a>
+      </div>
+    </div>
 
-          <ul>
-            <li><img src="img/square-regular.svg" alt=""> IIT Kanpur diverse student community which includes UG's,
-              PG's, PhD</li>
-            <li><img src="img/square-regular.svg" alt=""> IIT Kanpur Board of Deans and Proffesors</li>
-            <li><img src="img/square-regular.svg" alt=""> Top Bureaucrats of Central and State Government</li>
-            <li><img src="img/square-regular.svg" alt=""> IIT Kanpur distinguished faculty members</li>
-            <li><img src="img/square-regular.svg" alt=""> Director and members of SIIC and C3i Hub (Incubators at IIT
-              Kanpur)</li>
-            <li><img src="img/square-regular.svg" alt=""> E-Summit dignitaries, Top industrialist of Kanpur and IITK Alumns</li>
-          </ul>
+
+  </div>
+
+  <div class="non-landing">
+
+    <section class="about-us" id="about">
+      <div class="about">
+        <h1 id="about">
+
+
+        </h1>
+      </div>
+      <div class="about-text">
+
+        <div>
+          <h1>ABOUT STARTUP EXPO</h1>
+          StartupExpo is a startups exhibition event, welcoming all the top-notch Startups, Investors, Speakers,
+          Organizations and attendees from all over India. The event willprovide an amazing platform for startups to
+          showcase their innovative products with the rest of the people thereby connecting them to an amazing community
+          to help propel their growth.
         </div>
+        <div>
+          <!-- <iframe src="https://www.youtube.com/watch?v=P8F9-W-MVYc" frameborder="0" allowfullscreen>
+          </iframe> -->
+          <video controls muted width="80%" height="50%">
+            <source src="./videos/aftermovie.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="why" id="incentives">
+        <h1>WHY STARTUP EXPO</h1>
+      </div>
+      <!-- <div class="expo-box">
+            <div class="expo-features">
+                <div class="expo-row-1">
+                   <div class="feature f1"><p>STALLS FOR SHOWCASE</p></div> 
+                   <div class="feature f2"><p>PRODUCT LAUNCH/ STAGE SHOWCASE</p></div>
+                   <div class="feature f3"><p>PITCHING OPPORTUNITIES</p></div>
+                </div>
+                <div class="expo-row-2">
+                   <div class="feature f4"><p>FUNDRAISING AND MENTORING OPPORTUNITIES</p></div>
+                   <div class="feature f5"><p>VALIDATION FROM E-SUMMIT DIGNITARIES</p></div>
+                   <div class="feature f6"><p>IIT KANPUR INCUBATORS</p></div>
+                </div>
+                <div class="expo-row-3">
+                   <div class="feature f7"><p>INDUSTRIALISTS CONCLAVE</p></div>
+                   <div class="feature f8"><p>MEDIA COVERAGE</p></div>
+                   <div class="feature f9"><p>HIRE FROM IITK COMMUNITY</p></div>
+                </div>
+            </div>
+            </div> -->
+
+      <div class="comp-row">
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>STALLS FOR SHOWCASE</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>Startups will be provided stalls along with the necessary provisions (special provisions can be
+              provided) to showcase their cutting edge technologies. The stalls will be located at prime locations
+              with the visibility of more that 15k+ people.</h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>Product Launch/stage showcase</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>Companies will be provided with an opportunity to launch their product in front of a diverse community
+              attending E-Summit consisting of top investors, VC’s, Corporate Leaders and esteemed faculty (Details
+              can be found below).
+            </h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>Pitching opportunities</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>Along with the flow of Startup Expo pitching events and other buzz events will be organized where
+              startups would have an opportunity to pitch in front of a panel composed of Venture capitalists and
+              other dignitaries, to secure a chance of funding and mentoring opportunity.</h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>One on one mentoring and fundraising opportunities</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>Mentoring stations will be set up at the Expo where startups can secure a chance of having one on one
+              mentoring/networking with the top dignitaries and corporate leaders at E-Summit’22.
+            </h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>Validation from E-Summit Dignitaries</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>E-Summit has hosted some of the renowned personalities in the world including the likes of Late Dr. A.
+              P. J. Abdul Kalam (Former President of India), Michael Siebel (CEO, Y Combinator), Kunal Shah (Founder,
+              CRED), Ankush Sachdeva (CEO, ShareChat), Saurabh Goel (President, Havells) among many others.
+            </h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>IIT Kanpur Incubators</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>IIT Kanpur is the home to not one but two of India’s finest incubators; SIDBI Innovation and
+              Incubation Centre (SIIC), C3iHub IIT Kanpur.
+            </h3>
+          </div>
+        </div>
+        <!-- <div class="comp-card card">
+          <div class="comp-head">
+            <h1>E-Summit Coverage</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>E-Summit’22, the annual entrepreneurial flagship event of IIT Kanpur, with over 20,000 footfalls, has
+              evolved into a permanent fixture in the calendars of all the premier colleges of India. E-Summit has
+              been covered and advertised by Television channels and Newspapers.
+            </h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>Media coverage</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>Along with the branding and advertisement via the media coverage of E-Summit’22, Startup Expo will
+              also be featured in a special coverage, with personalized interviews of each of the participating
+              startups.
+            </h3>
+          </div>
+        </div>
+        <div class="comp-card card">
+          <div class="comp-head">
+            <h1>Opportunity to hire from the IIT Kanpur student community</h1>
+          </div>
+          <div class="comp-cont">
+            <h3>Startups will also have special provisions to hire from the student community at IIT Kanpur, including
+              UGs, PGs, PhDs specializing in various domains including technical, non-technical, core-engineering,
+              humanities and social sciences.
+            </h3>
+          </div>
+        </div> -->
+
+      </div>
+
+
+
+    </section>
+
+
+
+    <div class="form">
+      <button class="form-button">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3iBcobfmihxDhvJF4L_d_s9Dy1BepIEfH6_w7OAJEYWiqpg/viewform">
+
+          FILL
+          FORM
+        </a>
+      </button>
+    </div>
+
+    <section id="audience">
+      <div class="audience-heading">
+        <h1>WHO WILL ATTEND</h1>
+      </div>
+      <div class="audience-specify">
+        <ul class="audience-list_container">
+          <li class="audience-list_items"><img src="Images/Rectangle_list_style.png"
+              class="audience-list-list_style">IIT Kanpur diverse student community which includes UG's, PG's, PhD</li>
+          <li class="audience-list_items"><img src="Images/Rectangle_list_style.png"
+              class="audience-list-list_style">IIT Kanpur Board of Deans and Proffesors</li>
+          <li class="audience-list_items"><img src="Images/Rectangle_list_style.png"
+              class="audience-list-list_style">Top Bureaucrats of Central and State Government</li>
+          <li class="audience-list_items"><img src="Images/Rectangle_list_style.png"
+              class="audience-list-list_style">IIT Kanpur distinguished faculty members</li>
+          <li class="audience-list_items"><img src="Images/Rectangle_list_style.png"
+              class="audience-list-list_style">Director and members of SIIC and C3i Hub (Incubators at IIT Kanpur)</li>
+        </ul>
       </div>
     </section>
 
-    <section id="pricing" class="common">
-      <div class="heading">
+    <section id="slab">
+
+      <div class="slab-heading">
         <h1>STALL SLABS</h1>
       </div>
-      <div class="pri-con">
-        <!-- <div class="pri-box card">
-          <div class="pri-heading heading">
-            <h1>Silver Stall</h1>
-          </div>
-          <hr>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Size - 3m X 2m</p>
-          </div>
-          <div class="pri-line">
-            <img class="cross" src="img/cross.png" alt="">
-            <p>LED Screen</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Table</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Chair</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Light</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Plug</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Dustbin</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Accommodation upto 2 days</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Banner with Startup Name</p>
+
+      <div class="slab-elements">
+        <!-- <div class="slab-platinum">
+          <div class="slab-subslab">
+            <h1 class="slab-elements-heading">PLATINUM STALL</h1>
+            <div class="slab-list">
+              <ul>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">SIZE- 3M x 2M
+                </li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">LED SCRREN
+                </li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">TABLE</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">CHAIR</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">LIGHT</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">PLUG</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">DUSTBIN</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">ACCOMODATION
+                  UPTO 2 DAYS</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">BANNER WITH
+                  STARTUP</li>
+              </ul>
+            </div>
           </div>
         </div> -->
-        <div class="pri-box card">
-          <div class="pri-heading heading">
-            <h1>Gold Stall</h1>
-          </div>
-          <hr>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>3X3m SIZE Stalls</p>
-          </div>
-          <div class="pri-line">
-            <img class="cross" src="img/tick.png" alt="">
-            <p>2 Chair</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>1 Table</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Electricity Socket</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Fascia (with Name of startup)</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Light</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Dustbin</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>2 People stay (3days, 2nights)</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/cross.png" alt="">
-            <p>LED Screen</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>For one extra person</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>30 seconds product video played once on Expo main LED Screen on both the days </p>
+
+        <div class="slab-gold">
+          <!-- <img src="./Images/Slabs_Background.png" alt="" srcset=""> -->
+          <div class="slab-subslab">
+            <h1 class="slab-elements-heading">GOLD STALL</h1>
+            <div class="slab-list" style="text-transform: uppercase;">
+              <ul>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">10X10 sq feet
+                  Size Stalls
+                </li>
+                <li class="list-item"><img src="Images/tick_wrong.png" class="slab-list-tick_image" alt="">LED SCRREN
+                </li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">1 TABLE</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">2 CHAIR</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">LIGHT</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">Electricity
+                  Socket</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">DUSTBIN</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">Fascia (with
+                  Name of startup)</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">2 People stay
+                  (3days, 2nights)</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">30 seconds
+                  product video <br> played once on Expo main LED <br> Screen on both the days</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="pri-box card">
-          <div class="pri-heading heading">
-            <h1>Platinum Stall</h1>
+        <div class="slab-silver">
+          <div class="slab-subslab">
+            <h1 class="slab-elements-heading">PLATINUM STALL</h1>
+            <div class="slab-list" style="text-transform: uppercase;">
+              <ul>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">10X10 sq feet
+                  size Stalls
+                </li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">LED SCRREN
+                </li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">1 TABLE</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">2 CHAIR</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">LIGHT</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">Electricity
+                  Socket</Em></li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">DUSTBIN</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">3 people STAY
+                  (3days, 2nights) </li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">Fascia (with
+                  Name of startup)</li>
+                <li class="list-item"><img src="Images/tick_right.png" class="slab-list-tick_image" alt="">60 seconds
+                  product video <br> played twice on Expo main LED <br> Screen on both the days</li>
+              </ul>
+            </div>
           </div>
-          <hr>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>3X3m Size Premium Stalls</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>2 chairs</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>1 Table</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Electricity Socket</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Fascia (with Name of startup)</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Light</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>Dustbin</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>3 people STAY (3days, 2nights)</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>LED Screen</p>
-          </div>
-          <div class="pri-line">
-            <img src="img/tick.png" alt="">
-            <p>30 seconds product video played once on Expo main LED Screen on both the days</p>
-          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section id="conclave">
+      <h1 class="conclave-heading">Conclave</h1>
+      <div class="conclave-container">
+        <div class="conclave-subcontainer">
+          <strong>Investors Conclave</strong>
+          <p>A gathering of seasoned investors and aspiring entrepreneurs fostering discussions and an opportunity for
+            stops to pitch on spot.</p>
+        </div>
+        <div class="conclave-subcontainer">
+          <strong>Academia Conclave</strong>
+          <p>Bridging academia and innovation, this conclave engages conversations between scholarly wisdom and
+            entrepreneurial ingenuity.</p>
+        </div>
+        <div class="conclave-subcontainer">
+          <strong>Industrial Conclave</strong>
+          <p>Industrialists and startups look for collaborations as we bring innovation to the forefront of the business
+            landscape.</p>
+        </div>
+        <div class="conclave-subcontainer">
+          <strong>Incubators Conclave</strong>
+          <p>Nurturing innovation, this conclave gathers incubators and startups, cultivating an ecosystem of guidance.
+            </p>
         </div>
       </div>
     </section>
 
-    <section id="exh-map">
-      <div class="exh-map">
-        <!-- <div class="heading">
-          <h1>EXHIBITION MAP</h1>
-        </div> -->
-        <!-- <div class="exh-img"> -->
-        <img src="img/exhibition.png" alt="">
-        <!-- </div> -->
+    <section class="product-launch">
+
+      <div class="product-launch-content">
+        <div class="product-launch-video">
+          <!-- <iframe src="./videos/Video_StartUp_Expo.mp4" frameborder="0" allowfullscreen>
+          </iframe> -->
+          <video controls muted width="80%" height="50%">
+            <source src="./videos/Video_StartUp_Expo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="product-launch-video-content">
+          <div class="product-launch-heading">
+            <h1>Product Launch</h1>
+          </div>
+          <ul>
+            <li class="product-launch-video-content-lists">1. Typeface of the Startup Expo Slab : Showcased By [ABC]
+            </li>
+            <li class="product-launch-video-content-lists">2. Stall in expo
+              <ul>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">3X3m Size Premium Stalls</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">2 chairs</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">1 table</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">ELECTRICITY SOCKET</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">FASCIA (with Name and logo of startup)
+                </li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">LIGHT</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">DUSTBIN</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">3 people STAY (3days, 2nights)</li>
+                <li class="product-launch-video-content-sublists"><img src="Images/square-regular.svg"
+                    class="product-launch-video-content-sublists-bullets" alt="">LED SCREEN</li>
+              </ul>
+            </li>
+            <li class="product-launch-video-content-lists">3. Founder can come on stage and talk about the product on
+              stage during closing ceremony of expo</li>
+            <li class="product-launch-video-content-lists">4. Opening stalls</li>
+            <li class="product-launch-video-content-lists">5. Invitation to Networking Dinner</li>
+            <li class="product-launch-video-content-lists">6. Invitation to Upstart Conference</li>
+            <li class="product-launch-video-content-lists">7. Branding in auditorium before the Closing Ceremony of
+              summit</li>
+            <li class="product-launch-video-content-lists">8. Red Carpet to showcase the product and showcase the
+              product to the entire expo</li>
+            <li class="product-launch-video-content-lists">9. Product videos played frequently on the TV Screen</li>
+          </ul>
+        </div>
+        <div class="product-launch-description">
+          The expo provides an exclusive spotlight where startups can launch their product to a dynamic audience of VCs,
+          investors and corporate leaders and make a lasting impression.
+        </div>
       </div>
+
+      <section id="Testimonial">
+        <h1 class="testimonial-heading">Testimonials</h1>
+        <div class="testimonial-container-row_1">
+          <div class="testimonial-container">
+            <div class="testimonial-person-profile">
+              <div class="testimonial-person-image"><img src="Images/vishwal_padole.jpg" alt=""></div>
+              <!-- <div class="testimonial-person-name"><h3>Vishwal Padole</h3></div> -->
+              <div class="testimonial-person-post">
+                <strong>Vishwal Padole</strong>
+                <p>Co-Founder & COO, WeRehab Technologies</p>
+              </div>
+            </div>
+            <div class="testimonial-person-comment">
+              <p>The E-Summit at IITK was a highly engaging event that provided valuable networking opportunities with
+                professionals from diverse industries and entrepreneurs.</p>
+            </div>
+
+          </div>
+          <div class="testimonial-container">
+            <div class="testimonial-person-profile">
+              <div class="testimonial-person-image"><img src="Images/ritu_raj.jpg" alt=""></div>
+              <!-- <div class="testimonial-person-name"><h3>Ritu Raj</h3></div> -->
+              <div class="testimonial-person-post">
+                <strong>Ritu Raj</strong>
+                <p>CMO, SleepLabs</p>
+              </div>
+            </div>
+            <div class="testimonial-person-comment">
+              <p>It was great experience and a lot of intellectual audience came there and we discussed about our
+                products with them. It was great learning experience and a great platform for upcoming technologies and
+                ideations.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- <div class="testimonial-container-row_2">
+          <div class="testimonial-container">
+            <div class="testimonial-person-profile">
+                <div class="testimonial-person-image"><img src="Images/ritu_raj.jpg" alt=""></div>
+                <div class="testimonial-person-name"><h3>Ritu Raj</h3></div>
+            </div>
+            <div class="testimonial-person-comment">
+                <p>It was great experience and a lot of intellectual audience came there and we discussed about our products with them. It was great learning experience and a great platform for upcoming technologies and ideations.</p>
+            </div>
+            <div class="testimonial-person-post">
+                <strong>Ritu Raj</strong>
+                <p>CMO, SleepLabs</p>
+            </div>
+          </div>
+          <div class="testimonial-container">
+            <div class="testimonial-person-profile">
+                <div class="testimonial-person-image"><img src="Images/vishwal_padole.jpg" alt=""></div>
+                <div class="testimonial-person-name"><h3>Vishwal Padole</h3></div>
+            </div>
+            <div class="testimonial-person-comment">
+                <p>The E-Summit at IITK was a highly engaging event that provided valuable networking opportunities with professionals from diverse industries and entrepreneurs.</p>
+            </div>
+            <div class="testimonial-person-post">
+                <strong>Vishwal Padole</strong>
+                <p>Co-Founder & COO, WeRehab Technologies</p>
+            </div>
+          </div>
+        </div>               -->
+      </section>
+
     </section>
-
-    <section id="tnc">
-      <div class="tnc">
-        <div class="heading ">
-          <h1>TERMS AND CONDITIONS</h1>
-        </div>
-        <div class="tnc-cont">
-          <p>
-            1. Stall Owners – Only the registered team of participants can be allowed in the stall. No "Booth Buddies"
-            i.e. family, friends etc. who are not registered to attend, are allowed. Only two people per startup will be
-            accommodated by us.
-          </p>
-          <p>
-            2. Payment Terms – All payments are required to be made in advance for the event.
-          </p>
-          <p>
-            3. Cancellation Policy: Any cancellation needs to be made in writing addressing the organizer as per the
-            below:
-            <ul>
-              <li><img src="img/square-regular.svg" alt=""> If the cancellation is done or before 30th September 2023,
-                20% will be deducted on refund.</li>
-              <li><img src="img/square-regular.svg" alt=""> If the cancellation is done on or before 5th October 2023,
-                50% will be deducted on refund.</li>
-              <li><img src="img/square-regular.svg" alt=""> After 5th October 2023, refund will not be done.</li>
-            </ul>
-          </p>
-          <p>
-            4. Pack in and Pack out:
-            <ul>
-              <li><img src="img/square-regular.svg" alt=""> Setup Time – All startups will be allowed 3 hours to set up
-                their stalls before the event starts.</li>
-              <li><img src="img/square-regular.svg" alt=""> Pack up Time – All startups are required to close by 8.00pm
-                on either day of the event.</li>
-            </ul>
-          </p>
-          <p>
-            5. Materials – All banners/boards and other collateral, display products etc. charges will be borne by the
-            individual startup including their transport to and from the event venue.
-          </p>
-
-        </div>
+    <section id="contactUs" class="footer">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/ecelliitk/"><img class="footer-icons" src="Images/bi_instagram.png"
+            alt=""></a>
+        <a href="https://twitter.com/ecelliitk"><img class="footer-icons" src="Images/twitter.png" alt=""></a>
+        <a href="https://www.youtube.com/@ecelliitk"><img class="footer-icons" src="Images/youtube.png" alt=""></a>
+        <a href="https://www.facebook.com/ecelliitk/"><img class="footer-icons" src="Images/facebook.png" alt=""></a>
+        <a href="https://www.linkedin.com/company/ecelliitk/mycompany/"><img class="footer-icons"
+            src="Images/bi_linkedin.png" alt=""></a>
+        <a href="https://www.facebook.com/messages/t/143082049043150"><img class="footer-icons"
+            src="Images/fe_messanger.png" alt=""></a>
+      </div>
+      <div class="footer-moto">
+        <img class="footer-moto-expo" src="./Images/Expo coming soon (1).png" alt="">
+        <p class="footer-font-size">Organised By</p>
+        <img class="footer-moto-ecell" src="Images/logo ecell.png" alt="">
+      </div>
+      <div class="footer-slogan">
+        <p class="footer-font-size">Ideate. Innovate. Incubate.</p>
+      </div>
+      <div class="footer-connect">
+        <div class="footer-web footer-connect-components"><a href="mailto:connect@ecelliitk.org"
+            style="text-decoration: none;">
+            <p class="footer-connect-icon footer-font-size"><img class="footer-connect-icons" src="Images/web.png"
+                alt="">connect@ecelliitk.com</p>
+          </a></div>
+        <div class="footer-mail footer-connect-components"><a href="mailto:ecell@iitk.ac.in"
+            style="text-decoration: none;">
+            <p class="footer-connect-icon footer-font-size"><img class="footer-connect-icons" src="Images/mail.png"
+                alt="">ecell@iitk.ac.in</p>
+          </a></div>
+        <div class="footer-phone footer-connect-components"><a href="" style="text-decoration: none;">
+            <p class="footer-connect-icon footer-font-size"><img class="footer-connect-icons" src="Images/phone.png"
+                alt="">+91 79864 40345</p>
+          </a></div>
+      </div>
+      <div class="footer-address">
+        <p class="footer-font-size">Entrepreneurship Cell, IIT Kanpur, Kanpur, Uttar Pradesh, 208016</p>
       </div>
     </section>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    const accordionItemHeaders = document.querySelectorAll(
+      ".accordion-item-header"
+    );
+    accordionItemHeaders.forEach((accordionItemHeader) => {
+      accordionItemHeader.addEventListener("click", (event) => {
+        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+        const currentlyActiveAccordionItemHeader = document.querySelector(
+          ".accordion-item-header.active"
+        );
+        if (
+          currentlyActiveAccordionItemHeader &&
+          currentlyActiveAccordionItemHeader !== accordionItemHeader
+        ) {
+          currentlyActiveAccordionItemHeader.classList.toggle("active");
+          currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if (accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        } else {
+          accordionItemBody.style.maxHeight = 0;
+        }
+      });
+    });
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      // console.log("working")
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 15;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+
+    }
+    window.addEventListener("scroll", reveal);
 
 
-  <section class="footer">
-    <p style="margin-bottom: 30px;">Ideate. Innovate. Incubate</p>
-    <div class="socials">
-      <img src="img/icons/facebook.png" class="icon" />
-      <img src="img/icons/messenger.png" class="icon" />
-      <img src="img/icons/instagram.png" class="icon" />
-      <img src="img/icons/youtube.png" class="icon" />
-      <img src="img/icons/linkedin.png" class="icon" />
-      <img src="img/icons/twitter.png" class="icon" />
-    </div>
+    let hamMenuIcon = document.getElementById("ham-menu");
+    let navBar = document.getElementById("nav-bar");
+    let navLinks = navBar.querySelectorAll("li");
+    let header = document.querySelector('header')
+    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+    var targetEls = document.querySelector("#nav-bar").querySelectorAll('li')
+    var logoText = document.querySelector('.logo-text')
 
-    <!-- <div class="moto">
-        <img src="img/lg.png" />
-        <p>Organised By</p>
-        <img src="img/ecell-logo.png" />
-      </div> -->
-  </section>
-
-  <section class="contact">
-    <div>
-      <p style="display: flex; align-items: center">
-        <img src="img/icons/web.png" class="icon" style="margin-right: 15px" />
-        connect@ecelliitk.com
-      </p>
-      <p style="display: flex; align-items: center">
-        <img src="img/icons/mail.png" class="icon" style="margin-right: 15px" />
-        <a href="mailto: ecell@iitk.ac.in">ecell@iitk.ac.in</a> 
-      </p>
-      <!-- <p style="display: flex; align-items: center">
-        <img src="img/icons/phone.png" class="icon" style="margin-right: 15px" />
-        +91 98969 15422
-      </p> -->
-    </div>
-    <p>Entrepreneurship Cell, IIT Kanpur, Kanpur, Uttar Pradesh, 208016</p>
-  </section>
-
-    
-
-  <div id="preloader">
-    <div id="loader">
-      <video autoplay muted loop preload>
-        <source src="bg-video/Rise.mp4" />
-      </video>
-    </div>
-  </div>
-
-
-  <!-- <div class="ellipse-1-1">
-      <img src="img/exp-ellipse.png" alt="">
-    </div>
-    <div class=" ellipse ellipse-1-2"><img src="img/exp-ellipse.png" alt=""></div>
-    <div class="ellipse ellipse-1-3"><img src="img/exp-ellipse.png" alt=""></div>
-    <div class="ellipse ellipse-1-4"><img src="img/exp-ellipse.png" alt=""></div>
-    <div class="ellipse ellipse-1-5"><img src="img/exp-ellipse.png" alt=""></div>
-    <div class="ellipse ellipse-1-6"><img src="img/exp-ellipse.png" alt=""></div>
-
-    <div class="ellipse ellipse-2-1">
-      <img src="img/exh-ellipse.png" alt="">
-    </div>
-    <div class="ellipse ellipse-2-2"><img src="img/exh-ellipse.png" alt=""></div>
-    <div class="ellipse ellipse-2-3"><img src="img/exh-ellipse.png" alt=""></div>
-    <div class="ellipse ellipse-2-4"><img src="img/exh-ellipse.png" alt=""></div> -->
-
-
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/jquery-migrate-1.2.1.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/waypoint.min.js"></script>
-  <script src="js/main.js"></script>
+    hamMenuIcon.addEventListener("click", () => {
+      navBar.classList.toggle("active");
+      hamMenuIcon.classList.toggle("fa-times");
+      logoText.style.color = "white"
+      // header.style.backgroundColor = "black"
+      targetEls.forEach((ele) => {
+        if (ele.querySelector('a'))
+          ele.querySelector('a').style.color = "white";
+      })
+    });
+    navLinks.forEach((navLinks) => {
+      navLinks.addEventListener("click", () => {
+        navBar.classList.remove("active");
+        hamMenuIcon.classList.toggle("fa-times");
+      });
+    });
+  </script>
 </body>
 
 </html>
