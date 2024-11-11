@@ -1,3 +1,31 @@
+:root {
+    /* Primary color (base) */
+    --color-primary-500: #3498db;
+  
+    /* Primary color lighter variants */
+    --color-primary-50: #eaf4fb;      /* Very light */
+    --color-primary-100: #d6eaf8;
+    --color-primary-200: #aed6f1;
+    --color-primary-300: #85c1e9;
+    --color-primary-400: #5dade2;
+  
+    /* Primary color darker variants */
+    --color-primary-600: #DC57E7;
+    --color-primary-700: #870F88;
+    --color-primary-800: #510752;
+    --color-primary-900: #270E35;
+      /* Gray color variants */
+      --color-gray-100: #f8f9fa; /* Lightest gray */
+      --color-gray-200: #e9ecef;
+      --color-gray-300: #dee2e6;
+      --color-gray-400: #ced4da;
+      --color-gray-500: #adb5bd; /* Medium gray */
+      --color-gray-600: #6c757d;
+      --color-gray-700: #495057;
+      --color-gray-800: #343a40;
+      --color-gray-900: #212529; /* Darkest gray */
+    }
+  
 /* .conclave{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -31,7 +59,7 @@
     font-size: 5rem;
     text-align: center;
     color: whitesmoke;
-    background: linear-gradient(180deg, #0B75D3 27.40%, #FFF 100%);
+    background: linear-gradient(180deg, var(--color-primary-600) 27.40%, #FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -53,8 +81,8 @@
     width: 225px;
     height: 40vh;
     margin: 10px 0px;
-    background: rgb(81 122 200 / 25%);
-    box-shadow: 20px 20px 40px -6px rgb(92 133 225 / 20%);
+    background: var(--color-primary-800);
+    box-shadow: 20px 20px 40px -6px var(--color-primary-800);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     border-radius: 10px;
@@ -77,7 +105,7 @@
 
 .conclave-subcontainer strong:hover {
     transform: scale(1.05);
-    color: rgb(80, 122, 235);
+    color: var(--color-primary-600);
 }
 
 .conclave-subcontainer p {

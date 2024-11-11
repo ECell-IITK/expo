@@ -1,6 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stick+No+Bills:wght@800&display=swap');
 
+/* Webfont: Kompagnia-Regular */@font-face {
+    font-family: 'Kompagnia';
+    src: url('./Font/Kompagnia.woff2') format('woff2'), /* Modern Browsers */
+         url('./Font/Kompagnia.woff') format('woff'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+:root {
+  /* Primary color (base) */
+  --color-primary-500: #3498db;
+
+  /* Primary color lighter variants */
+  --color-primary-50: #eaf4fb;      /* Very light */
+  --color-primary-100: #d6eaf8;
+  --color-primary-200: #aed6f1;
+  --color-primary-300: #85c1e9;
+  --color-primary-400: #5dade2;
+
+  /* Primary color darker variants */
+  /* pink */
+  --color-primary-600: #DC57E7;
+  --color-primary-700: #870F88;
+  --color-primary-800: #740679;
+  --color-primary-900: #510752;
+  --color-primary-1000: #270E35;
+  --color-primary-1100: #120112;
+
+  /* purple */
+  --color-primary-900: #270E35;
+
+    /* Gray color variants */
+    --color-gray-100: #f8f9fa; /* Lightest gray */
+    --color-gray-200: #e9ecef;
+    --color-gray-300: #dee2e6;
+    --color-gray-400: #ced4da;
+    --color-gray-500: #adb5bd; /* Medium gray */
+    --color-gray-600: #6c757d;
+    --color-gray-700: #495057;
+    --color-gray-800: #343a40;
+    --color-gray-900: #212529; /* Darkest gray */
+  }
+
 body,
 html {
     margin: 0;
@@ -197,7 +242,7 @@ body::-webkit-scrollbar-thumb:active {
     text-align: center;
     bottom: 43%;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(180deg, #FFF 27.40%, #00427C 100%);
+    background: linear-gradient(180deg, #FFF 27.40%, var(--color-primary-600) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,7 +276,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .about {
-    background: linear-gradient(180deg, #0B75D3 27.40%, #FFF 100%);
+    background: linear-gradient(180deg, var(--color-primary-600) 27.40%, #FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -294,7 +339,7 @@ flex-shrink: 0; */
     align-items: center;
     flex-direction: column;
 
-    background: linear-gradient(180deg, #0B75D3 27.40%, #FFF 100%);
+    background: linear-gradient(180deg, var(--color-primary-600) 27.40%, #FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -339,10 +384,10 @@ flex-shrink: 0; */
     width: 270px;
     flex-direction: column;
     /* background: radial-gradient(100% 100% at 28.98% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%); */
-    background: radial-gradient(100% 100% at 28.98% 0%, rgb(78 133 176 / 40%) 0%, rgb(114 37 160 / 10%) 100%);
+    background: linear-gradient(135deg, #740679, #120112);
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 18px 5px rgb(71, 109, 213);
+    box-shadow: 0px 0px 18px 5px var(--color-primary-600);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 0.2s all;
@@ -365,8 +410,10 @@ flex-shrink: 0; */
 .comp-head h1 {
     font-size: large;
     text-transform: uppercase;
-    color: #07cece;
+    color: var(--color-primary-700);
     text-align: center;
+    font-family: 'Kompagnia';
+    color: white;
 }
 
 .comp-cont h3 {
@@ -429,7 +476,7 @@ flex-shrink: 0; */
 }
 
 .why {
-    background: linear-gradient(180deg, #0B75D3 27.40%, #FFF 100%);
+    background: linear-gradient(180deg, var(--color-primary-600) 27.40%, #FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -507,7 +554,7 @@ flex-shrink: 0; */
     border: 2px solid grey;
     border-radius: 31px;
 
-    background: linear-gradient(180deg, #1D334E 0%, grey 100%);
+    background: linear-gradient(180deg, var(--color-primary-800) 0%, grey 100%);
 
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -526,7 +573,7 @@ flex-shrink: 0; */
 
 
 .feature p {
-    background: linear-gradient(180deg, #167eda 0%, #FFF 100%);
+    background: linear-gradient(180deg, var(--color-primary-600) 0%, #FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -547,9 +594,9 @@ flex-shrink: 0; */
 .form-button {
     cursor: pointer;
     border: none;
-    color: #1381E2;
+    color: var(--color-primary-600);
     text-align: center;
-    text-shadow: 0px 1px 4px rgba(0, 117, 255, 0.46);
+    text-shadow: 0px 1px 4px var(--color-primary-700);
     font-family: Open Sans;
     font-size: 25px;
     font-style: normal;
@@ -577,7 +624,7 @@ flex-shrink: 0; */
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
     border-radius: 20px;
     background: rgba(217, 217, 217, 0.11);
-    box-shadow: 0px 4px 4px 0px rgba(20, 134, 228, 0.54), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--color-primary-700), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     height: 50px;
     max-width: 213px;
 }
@@ -615,7 +662,7 @@ flex-shrink: 0; */
 /**/
 
 .who {
-    background: linear-gradient(180deg, #0B75D3 27.40%, #FFF 100%);
+    background: linear-gradient(180deg, var(--color-primary-600) 27.40%, #FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -835,7 +882,7 @@ flex-shrink: 0; */
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(20px);
     border-radius: 20px;
-    border: 2px solid #6700ff;
+    border: 2px solid var(--color-primary-900);
     padding: 20px;
     margin: 50px 0;
     align-content: center;
@@ -914,7 +961,7 @@ flex-shrink: 0; */
         box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
         backdrop-filter: blur(20px);
         border-radius: 20px;
-        border: 2px solid #6700ff;
+        border: 2px solid var(--color-primary-900);
         padding: 20px;
         margin: 50px 0;
         align-content: center;

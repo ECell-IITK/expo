@@ -1,3 +1,32 @@
+:root {
+  /* Primary color (base) */
+  --color-primary-500: #3498db;
+
+  /* Primary color lighter variants */
+  --color-primary-50: #eaf4fb;      /* Very light */
+  --color-primary-100: #d6eaf8;
+  --color-primary-200: #aed6f1;
+  --color-primary-300: #85c1e9;
+  --color-primary-400: #5dade2;
+
+  /* Primary color darker variants */
+  --color-primary-600: #DC57E7;
+  --color-primary-700: #870F88;
+  --color-primary-800: #510752;
+  --color-primary-900: #270E35;
+    /* Gray color variants */
+    --color-gray-100: #f8f9fa; /* Lightest gray */
+    --color-gray-200: #e9ecef;
+    --color-gray-300: #dee2e6;
+    --color-gray-400: #ced4da;
+    --color-gray-500: #adb5bd; /* Medium gray */
+    --color-gray-600: #6c757d;
+    --color-gray-700: #495057;
+    --color-gray-800: #343a40;
+    --color-gray-900: #212529; /* Darkest gray */
+  }
+
+
 a {
     text-decoration: none;
     color: white;
@@ -21,7 +50,6 @@ a {
     transform: translateY(0);
     opacity: 1;
 }
-  
   header {
     position: fixed;
     width: 100%;
@@ -30,10 +58,10 @@ a {
     z-index: 1000;
     transition: background-color 500ms ease-in-out;
     background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 var(--color-primary-800);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   
   nav {
