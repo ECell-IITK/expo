@@ -285,9 +285,8 @@ body::-webkit-scrollbar-thumb:active {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     text-align: center;
-    font-family: Poppins;
+    font-family: var(--primary-text) ;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -524,12 +523,15 @@ flex-shrink: 0; */
     -webkit-text-fill-color: transparent;
 
     text-align: center;
-    font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+}
+.why h1{
+    font-family: 'Kompagnia';
+
 }
 @media screen and (max-width:500px) {
     .why{
@@ -729,7 +731,9 @@ flex-shrink: 0; */
      -webkit-text-fill-color: transparent;
 }
 
-
+.audience-heading h1{
+    font-family: 'Kompagnia';
+}
 .audience-specify {
     display: flex;
     justify-content: space-around;
@@ -791,6 +795,9 @@ flex-shrink: 0; */
      -webkit-text-fill-color: transparent;
 
 
+} 
+.slab-heading h1{
+    font-family: 'Kompagnia';
 }
 @media screen and (max-width:500px) {
     .slab-heading{

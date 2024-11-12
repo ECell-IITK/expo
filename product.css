@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Stick+No+Bills:wght@800&display=swap');
+/* Webfont: Kompagnia-Regular */@font-face {
+    font-family: 'Kompagnia';
+    src: url('./Font/Kompagnia.woff2') format('woff2'), /* Modern Browsers */
+         url('./Font/Kompagnia.woff') format('woff'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 
 :root {
     /* Primary color (base) */
@@ -78,7 +87,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.product-launch-heading h1{
+    font-family:'Kompagnia' ;
+}
 .product-launch-heading ul{
     padding: 10px;
 }
