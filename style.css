@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb:active {
     position: absolute;
     top: 0;
     left: 0;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .register-now-landing-page{
@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb:active {
     border-radius: 10px;
     border: 2px solid white;
     font-size: 18px;
-    margin: 0px 60px;
+    margin: 10px 60px;
     font-weight: 550;
     color: white;
     transition: 0.3s all;
@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb:active {
         padding: 10px;
         border-radius: 8px;
         border: 1px solid white;
-        margin: 0 10px;
+        margin: 10px 10px;
         color: white;
         font-size: 12px;
         /* transform: translateY(20px); */
@@ -231,7 +231,7 @@ body::-webkit-scrollbar-thumb:active {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    height: 30em;
+    height: 20rem;
     position: relative;
 }
 
@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb:active {
     letter-spacing: 1em;
     position: absolute;
     text-align: center;
-    bottom: 28%;
+    bottom: 10%;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     background: linear-gradient(180deg, #FFF 27.40%, var(--color-primary-600) 100%);
     background-clip: text;
@@ -278,11 +278,29 @@ body::-webkit-scrollbar-thumb:active {
         letter-spacing: 0.5em;
         position: absolute;
         text-align: center;
-        bottom: 28%;
+        bottom: 10%;
         transform: translateY(30px);
     }
 }
+.curve{
+    position: relative;
+    
+    width: 100vw;
+    height: 2rem;
+    /* border: 1px solid red; */
 
+}
+
+.curve img{
+    position: relative;
+    
+    bottom: 90%;
+    left: 0;
+    width: 100%;
+    /* width: 100%;  */
+    height: 100%;
+    /* z-index: 1; */
+}
 .about {
     background: linear-gradient(180deg, var(--color-primary-600) 27.40%, #FFF 100%);
     background-clip: text;
@@ -304,27 +322,6 @@ body::-webkit-scrollbar-thumb:active {
     background-color: transparent;
 }
 
-.about-top{
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 30px;
-    background-color: var(--color-primary-700);
-    border-radius: 0 0 3rem 3rem;
-
-}
-.about-top::before{
-    /* border: 1px solid red; */
-    content: '';
-    /* position: absolute; */
-  
-    width: 100%;
-    background-color: rgba(52, 152, 219, 0); /* 0.5 sets 50% transparency */
-/* background-image: url(./Images/roundbg.svg); */
-
-    height: 50px; /* Adjust this based on curve depth */
-    /* background:transparent; */
-    border-radius: 0 0 100% 100%;
-}
 
 .about-text {
     color: #FFF;
@@ -473,11 +470,15 @@ body::-webkit-scrollbar-thumb:active {
     font-family: 'Poppins';
     font-size: 13px;
     padding: 4% 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .comp-head h1 {
-    font-size: large;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
     color: var(--color-primary-700);
     text-align: center;
     font-family: 'Kompagnia';
@@ -487,10 +488,13 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .comp-cont h3 {
-    font-weight: 400;
+    font-size: small;
     font-family: "Open Sans", sans-serif;
     color: whitesmoke;
-    line-height: 1.5;
+    font-style: normal;
+font-weight: 400;
+line-height: 180.5%;
+
 }
 
 .comp-cont {
@@ -501,9 +505,7 @@ body::-webkit-scrollbar-thumb:active {
     line-height: 19px;
     font-weight: 10;
     text-align: justify;
-    display: flex;
     /* justify-content: flex-start; */
-    align-items: flex-start;
 }
 
 .comp-row {

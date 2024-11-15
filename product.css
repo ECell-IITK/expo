@@ -143,10 +143,10 @@ grid-row-gap: 10px;
 }
 .product-launch-video video{
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 16%;
     height: 40%;
-    width:60%;
+    width:50%;
     display: flex;
     /* align-items: center;
     justify-content: center; */
