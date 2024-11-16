@@ -111,33 +111,42 @@
 }
 
 .conclave-subcontainer strong {
-    font-size: 20px;
+    text-align: center;
+    /* font-size: 20px; */
     display: flex;
     justify-content: space-around;
+    font-family:'Kompagnia' ;
     align-items: center;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     transition: transform 700ms;
     letter-spacing: var(--letter-spacing-value);
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .conclave-subcontainer strong:hover {
     transform: scale(1.05);
     color: var(--color-primary-600);
 }
-.conclave-subcontainer strong{
-    font-family:'Kompagnia' ;
-}
 
 .conclave-subcontainer p {
-    padding: 0px 10px;
-    font-size: 15px;
-    line-height: 1.5;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+
+    align-self: flex-start;
+
+    padding: 0 10px;
+    font-size: small;
+    /* line-height: 1.5; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* margin-bottom: 30px; */
     transition: transform 700ms;
     text-align: justify;
     font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;   
+    line-height: 180.5%;
 
 }
 
