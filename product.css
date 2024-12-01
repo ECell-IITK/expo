@@ -177,4 +177,17 @@ font-size: 13px;
         /* height: 320px; */
         max-width: 90%;
     }
+    .product-launch-video{
+        position    : relative;
+        top: 50px;
+        left: 10%;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .product-launch-video-content{
+        position: relative;
+        top: -50px;
+        left: 5px;
+    }
 }
