@@ -84,12 +84,15 @@ a {
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
     /* padding-top: 20px; */
+    
   }
   
   nav a {
     font-size: 15px;
     text-decoration: none;
     /* margin: 0 16px; */
+    padding-left: 1rem;
+
   }
   
   nav a#logo {
