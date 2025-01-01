@@ -180,12 +180,12 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .esummit-text {
-    width: 40em;
+    width: 30rem;
 }
 
 @media screen and (max-width: 768px) {
     .esummit-text {
-        width: 25em;
+        width: 30rem;
     }
 
     .esummit-text-box {
@@ -230,7 +230,7 @@ body::-webkit-scrollbar-thumb:active {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    height: 20rem;
+    height: 15rem;
     position: relative;
 }
 
@@ -564,7 +564,7 @@ line-height: normal;
     font-weight: 10;
     text-align: justify;
     /* justify-content: flex-start; */
-]
+
 }
 }
 
@@ -958,7 +958,7 @@ line-height: normal;
     .slab-gold,
     .slab-silver {
         background-size: 250px;
-        height: 280px;
+        min-height: 280px;
     }
 }
 
