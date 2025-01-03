@@ -227,6 +227,7 @@ body::-webkit-scrollbar-thumb:active {
     .startup-text img{
         max-width: 200px;
     }
+   
 }
 
 .expo-landing {
@@ -1124,7 +1125,7 @@ line-height: normal;
         margin-left: auto;
         margin-right: auto;
         height:fit-content;
-        max-width: 230px;
+        min-width: 230px;
         gap: 10px;
         display: flex;
         justify-content: space-around;

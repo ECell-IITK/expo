@@ -50,25 +50,23 @@
     gap: 60px;
 }
 
-.product-launch-video{
+.product-launch-video video{
     /* position: relative; */
     /* position: absolute; */
-    position: absolute; 
-    /*  */
-    z-index: 2;
+    
 }
 
 .product-launch-video  .frame{
     
     width: 80%;
-     height: 50%; 
+     height: 80%; 
     position: relative ;
     /* top: 0; */
     z-index: 1;
 }
 
 
-.product-launch-video{
+.product-launch-video {
     position: relative;
     /* position: absolute; */
     /* position: absolute;  */
@@ -179,7 +177,7 @@ font-size: 13px;
     }
     .product-launch-video{
         position    : relative;
-        top: 50px;
+        /* top: 50px; */
         left: 10%;
         width: 100vw;
         height: 40vh;
