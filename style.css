@@ -205,8 +205,9 @@ body::-webkit-scrollbar-thumb:active {
     font-family: 'Poppins';
     font-size: 105px;
     font-weight: 700;
-    margin: 0.75em 0em 0em 0em;
+    margin: 1.25em 0em 0em 0em;
     text-align: center;
+    
     /* text-shadow: 0px 4px 10px rgba(92, 92, 92, 0.25); */
     /* background: linear-gradient(180deg, #0087FF 0%, rgba(0, 66, 124, 0.73) 49.27%, #0087FF 100%); */
     /* background-clip: text; */
