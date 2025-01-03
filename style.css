@@ -138,6 +138,7 @@ body::-webkit-scrollbar-thumb:active {
         margin: 0.5em;
         left: 0%;
         top: 0%;
+   
     }
 }
 
@@ -219,7 +220,8 @@ body::-webkit-scrollbar-thumb:active {
 @media screen and (max-width: 768px) {
     .startup-text {
         font-size: 65px;
-        margin: 2.5em 0em 0em 0em;
+        /* margin-top: 6rem; */
+        margin: 3em 0em 0em 0em;
     }
     .startup-text img{
         max-width: 200px;
@@ -261,6 +263,7 @@ body::-webkit-scrollbar-thumb:active {
         justify-content: center;
         /* align-items: center; */
         height: 16em;
+        margin-top: 2rem;
         position: relative;
     }
 
