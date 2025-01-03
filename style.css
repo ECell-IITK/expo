@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .landing-page {
-    background-image: url(./Images/landing_bg2024.png);
+    background-image: url(./Images/landing.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
