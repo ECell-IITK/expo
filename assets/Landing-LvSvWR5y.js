@@ -1,4 +1,4 @@
-import{r,j as e,e as t}from"./index-LMTOa6IY.js";const n="/expo/assets/typefaceSVG-ojCu9mPf.svg",a="/expo/assets/expolanding1-DW4k0omY.png",o=()=>{const s=r.useRef(null);return e.jsxs("section",{ref:s,id:"home",className:"relative min-h-screen flex items-center justify-center text-white overflow-hidden",children:[e.jsx("img",{src:a,alt:"Startup Expo Stalls",loading:"lazy",decoding:"async",className:`\r
+import{r,j as e,e as t}from"./index-mgKCi6OX.js";const n="/expo/assets/typefaceSVG-ojCu9mPf.svg",a="/expo/assets/expolanding1-DW4k0omY.png",o=()=>{const s=r.useRef(null);return e.jsxs("section",{ref:s,id:"home",className:"relative min-h-screen flex items-center justify-center text-white overflow-hidden",children:[e.jsx("img",{src:a,alt:"Startup Expo Stalls",loading:"lazy",decoding:"async",className:`\r
           absolute inset-0\r
           w-full h-full\r
           object-cover\r
