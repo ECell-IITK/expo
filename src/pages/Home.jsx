@@ -1,14 +1,13 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import WhyStartupExpo from "../components/WhyStartupExpo";
-import WhoWillAttend from "../components/WhoWillAttend";
-import StallSlabs from "../components/StallSlabs";
-import Startups from "../components/Startups";
-import Events from "../components/Events";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import { lazy } from "react";
+const Navbar = lazy(() => import("../components/Navbar"));
+const About = lazy(() => import("../components/About"));
+const Hero = lazy(() => import("../components/Landing"));
+const Gallery = lazy(() => import("../components/Gallery"));
+const WhoWillAttend = lazy(() => import("../components/WhoWillAttend"));
+const WhyStartupExpo = lazy(() => import("../components/WhyStartupExpo"));
+const StallSlabs = lazy(() => import("../components/StallSlabs"));
+const Footer = lazy(() => import("../components/Footer"));
+
 
 function Home() {
   return (
@@ -17,11 +16,9 @@ function Home() {
       <Hero />
       <About />
       <WhyStartupExpo />
+      <Gallery/>
       <WhoWillAttend />
       <StallSlabs />
-      <Startups />
-      <Events />
-      <Contact />
       <Footer />
     </div>
   );

@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const WhoWillAttend = () => {
   const attendees = [
-    "IIT Kanpur diverse student community which includes UG's, PG's, PhD",
-    "IIT Kanpur Board of Deans and Proffesors",
-    "Top Bureaucrats of Central and State Government",
-    "IIT Kanpur distinguished faculty members",
-    "Director and members of SIIC and C3i Hub (Incubators at IIT Kanpur)",
+    "IIT Kanpur diverse student community including UG, PG and PhD scholars",
+    "IIT Kanpur Board of Deans and Professors",
+    "Top bureaucrats from Central and State Government",
+    "Distinguished faculty members of IIT Kanpur",
+    "Director and members of SIIC, TechnoPark and C3i Hub (Incubators at IIT Kanpur)",
   ];
 
   const sectionRef = useRef(null);
@@ -19,29 +19,25 @@ const WhoWillAttend = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Heading animation
       gsap.from(headingRef.current, {
-        y: 50,
+        y: 40,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.7,
         scrollTrigger: {
           trigger: headingRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
+          start: "top 85%",
         },
       });
 
-      // List items animation
       gsap.from(listRef.current.children, {
-        x: -50,
+        x: -40,
         opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
+        duration: 0.5,
+        stagger: 0.08,
         ease: "power2.out",
         scrollTrigger: {
           trigger: listRef.current,
-          start: "top 75%",
-          toggleActions: "play none none none",
+          start: "top 80%",
         },
       });
     }, sectionRef);
@@ -50,31 +46,42 @@ const WhoWillAttend = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      id="who-will-attend"
-      className="section-padding bg-white"
-    >
-      <div className="container-custom">
-        <div
-          ref={headingRef}
-          className="text-center mb-10 sm:mb-12 md:mb-16 px-4"
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            WHO WILL ATTEND
+    <section ref={sectionRef} id="who-will-attend" className="py-3 sm:py-1 backdrop-blur-md">
+      <div className="container-custom px-4">
+        {/* ===== HEADING ===== */}
+        <div ref={headingRef} className="text-center mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-[#2dd4bf] via-[#5eead4] to-[#99f6e4] bg-clip-text text-transparent mb-3 sm:mb-4">
+            {" "}
+            WHO WILL ATTEND ?{" "}
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-primary-600 mx-auto mb-4 sm:mb-6"></div>
+          <div className="w-16 h-[3px] bg-gradient-to-r from-[#46f9e4] to-[#2dd4bf] mx-auto mt-3" />
         </div>
 
-        <div className="max-w-3xl mx-auto px-4">
-          <ul ref={listRef} className="space-y-4 sm:space-y-6">
+        {/* ===== INFO BOX ===== */}
+        <div
+          className="
+            max-w-4xl mx-auto
+            rounded-2xl
+            p-5 sm:p-6
+            bg-gradient-to-br
+            from-[#0b2f2b]
+            via-[#0f3f39]
+            to-[#06201d]
+            border border-[#3fffe2]/30
+            shadow-[0_0_40px_rgba(63,255,226,0.18)]
+            transition-all duration-300
+            hover:brightness-110
+            hover:-translate-y-1
+            hover:shadow-[0_0_65px_rgba(63,255,226,0.35)]
+          "
+        >
+          <ul ref={listRef} className="space-y-3 sm:space-y-4">
             {attendees.map((attendee, index) => (
-              <li
-                key={index}
-                className="flex items-start space-x-3 sm:space-x-4"
-              >
-                <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+              <li key={index} className="flex items-start gap-3">
+                {/* Accent dot */}
+                <span className="mt-[9px] h-2.5 w-2.5 rounded-full bg-[#46f9e4]  flex-shrink-0" />
+
+                <p className="text-sm sm:text-base text-teal-50 leading-relaxed">
                   {attendee}
                 </p>
               </li>
@@ -87,4 +94,3 @@ const WhoWillAttend = () => {
 };
 
 export default WhoWillAttend;
-

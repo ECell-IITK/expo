@@ -8,27 +8,27 @@ const WhyStartupExpo = () => {
   const features = [
     {
       id: 1,
-      title: "Stalls For Showcase",
+      title: "Stalls for Showcase",
       description:
         "Startups will be provided stalls along with the necessary provisions (special provisions can be provided) to showcase their cutting edge technologies. The stalls will be located at prime locations with the visibility of more that 15k+ people.",
     },
     {
       id: 2,
-      title: "Product Launch/ stage showcase",
+      title: "Product Launch/ Stage Showcase",
       description:
         "Companies will be provided with an opportunity to launch their product in front of a diverse community attending E-Summit consisting of top investors, VC's, Corporate Leaders and esteemed faculty (Details can be found below).",
     },
     {
       id: 3,
-      title: "Pitching opportunities",
+      title: "Pitching Opportunities at Pitch Battle",
       description:
         "Along with the flow of Startup Expo pitching events and other buzz events will be organized where startups would have an opportunity to pitch in front of a panel composed of Venture capitalists and other dignitaries, to secure a chance of funding and mentoring opportunity.",
     },
     {
       id: 4,
-      title: "ONE ON ONE MENTORING AND OPPORTUNITIES",
+      title: "One On One Mentoring And Opportunities",
       description:
-        "Mentoring stations will be set up at the Expo where startups can secure a chance of having one on one mentoring/networking with the top dignitaries and corporate leaders at E-Summit'22.",
+        "Mentoring stations will be set up at the Expo where startups can secure a chance of having one on one mentoring/networking with the top dignitaries and corporate leaders at E-Summit'25.",
     },
     {
       id: 5,
@@ -40,7 +40,7 @@ const WhyStartupExpo = () => {
       id: 6,
       title: "IIT Kanpur Incubators",
       description:
-        "IIT Kanpur is the home to not one but two of India's finest incubators; SIDBI Innovation and Incubation Centre (SIIC), C3iHub IIT Kanpur.",
+        "IIT Kanpur is the home to not one but two of India's finest incubators, SIDBI Innovation and Incubation Centre (SIIC), C3iHub IIT Kanpur and Technopark IIT Kanpur.",
     },
   ];
 
@@ -82,20 +82,16 @@ const WhyStartupExpo = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      id="why-startup-expo"
-      className="section-padding bg-gray-50"
-    >
-      <div className="container-custom">
+    <section ref={sectionRef} id="why-startup-expo" className="backdrop-blur-md">
+      <div>
         <div
           ref={headingRef}
-          className="text-center mb-10 sm:mb-12 md:mb-16 px-4"
+          className="text-center mb-10 sm:mb-12 md:mb-16 px-4 "
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold  bg-gradient-to-r from-[#2dd4bf] via-[#5eead4] to-[#99f6e4] bg-clip-text text-transparent mb-3 sm:mb-4">
             WHY STARTUP EXPO
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-primary-600 mx-auto mb-4 sm:mb-6"></div>
+          <div className="w-20 sm:w-24 h-1 bg-[#46f9e4] mx-auto mb-4 sm:mb-6"></div>
         </div>
 
         <div
@@ -105,14 +101,34 @@ const WhyStartupExpo = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white rounded-lg sm:rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-4 sm:p-6 border border-gray-100"
+              className="
+    overflow-hidden
+    rounded-2xl
+    bg-gradient-to-b
+    from-[#16d8bb]
+    via-[#166860]
+    to-[#151414]
+    shadow-[0_10px_35px_rgba(0,0,0,0.45)]
+    hover:-translate-y-1
+    hover:shadow-[0_20px_60px_rgba(45,212,191,0.35)]
+  "
             >
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-primary-600 mb-3 sm:mb-4">
-                {feature.title}
-              </h3>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                {feature.description}
-              </p>
+              {/* ===== HEADER (NO BG) ===== */}
+              <div className="px-4 pt-8 pb-5">
+                <h3 className="text-lg sm:text-xl font-semibold text-white text-center tracking-wide">
+                  {feature.title}
+                </h3>
+              </div>
+
+              {/* ===== SUBTLE DIVIDER ===== */}
+              <div className="mx-6 h-px bg-white/20" />
+
+              {/* ===== CONTENT (NO BG) ===== */}
+              <div className="px-6 pt-5 pb-7">
+                <p className="text-sm sm:text-base text-teal-50/90 leading-relaxed text-justify">
+                  {feature.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -122,4 +138,3 @@ const WhyStartupExpo = () => {
 };
 
 export default WhyStartupExpo;
-

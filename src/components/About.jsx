@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -54,39 +53,54 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="about" className="section-padding bg-white">
+    <section ref={sectionRef} id="about" className="section-padding backdrop-blur-md ">
       <div className="container-custom">
         <div
           ref={headingRef}
           className="text-center mb-10 sm:mb-12 md:mb-16 px-4"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            ABOUT STARTUP EXPO
+          <h2
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold  bg-gradient-to-r from-[#2dd4bf] via-[#5eead4] to-[#99f6e4] bg-clip-text text-transparent mb-3 sm:mb-4"
+          >
+            ABOUT
           </h2>
-          <div className="w-20 sm:w-24 h-1 bg-primary-600 mx-auto mb-4 sm:mb-6"></div>
+          <div className="w-20 sm:w-24 h-1 bg-[#46f9e4] mx-auto mb-4 sm:mb-6"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center px-4">
           <div ref={contentRef}>
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-              StartupExpo is a startups exhibition event, welcoming all the
-              top-notch Startups, Investors, Speakers, Organizations and
-              attendees from all over India. The event will provide an amazing
-              platform for startups to showcase their innovative products with
-              the rest of the people thereby connecting them to an amazing
-              community to help propel their growth.
+            <p className="text-sm sm:text-base md:text-lg text-white mb-4 sm:mb-6 leading-relaxed text-justify">
+              Startup Expo is a premier exhibition that brings together
+              visionary startups, investors, and organizations from across India
+              under one roof. The event serves as a dynamic platform for
+              emerging ventures to showcase their innovative products,
+              cutting-edge technologies, and disruptive ideas to a diverse
+              audience. By fostering meaningful interactions and collaborations,
+              Startup Expo bridges the gap between innovation and opportunity,
+              enabling startups to gain visibility, insights, and connections
+              essential for scaling their impact.
+            </p>
+            <p className="text-sm sm:text-base md:text-lg text-white mb-4 sm:mb-6 leading-relaxed text-justify">
+              With an ecosystem-driven approach, the Expo encourages networking,
+              learning, and growth by connecting startups with mentors,
+              investors, and like-minded innovators. It aims to spark
+              conversations that lead to partnerships, investments, and
+              long-term success within the entrepreneurial community.
             </p>
           </div>
           <div ref={cardRef} className="relative mt-8 md:mt-0">
-            <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl">
+            <div className="bg-gradient-to-br bg-[#11b19e] rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl">
               <div className="bg-white rounded-lg p-4 sm:p-6 shadow-lg">
-                <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                  Video Highlights
-                </h4>
-                <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                  <p className="text-gray-500 text-sm">
-                    Video Placeholder - E-SUMMIT Glimpses
-                  </p>
+                {/* VIDEO WRAPPER */}
+                <div className="aspect-video rounded-lg overflow-hidden shadow-inner">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/Hm8D5n3GFlQ"
+                    title="Startup Expo Glimpses"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </div>

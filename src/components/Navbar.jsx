@@ -1,213 +1,222 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "../assets/images/LogoComplete.png";
+import expo from "../assets/images/expoLogo.svg";
+
+const ESUMMIT_WEBSITE = "https://www.ecelliitk.org/esummit/"; // change if needed
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50">
-      <div className="container-custom">
-        <div className="flex justify-between items-center py-3 md:py-4">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg md:text-xl">E</span>
-            </div>
-            <div>
-              <h1 className="text-base md:text-xl font-bold text-gray-900">
-                IIT Kanpur E-Cell
-              </h1>
-              <p className="text-xs text-gray-600 hidden sm:block">
-                Startup Expo
-              </p>
-            </div>
-          </Link>
-
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            {isHomePage ? (
-              <>
-                <a
-                  href="#home"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  About
-                </a>
-                <a
-                  href="#why-startup-expo"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Why Startup Expo
-                </a>
-                <a
-                  href="#startups"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Startups
-                </a>
-                <a
-                  href="#events"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Events
-                </a>
-                <a
-                  href="#contact"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Contact
-                </a>
-              </>
-            ) : (
-              <>
-                <Link
-                  to="/"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/explore-startups"
-                  className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-                >
-                  Explore Startups
-                </Link>
-              </>
-            )}
-            <Link
-              to="/signin"
-              className="text-gray-700 hover:text-primary-600 transition-colors text-sm xl:text-base"
-            >
-              Sign In
-            </Link>
-            <Link
-              to="/register"
-              className="btn-primary text-sm px-4 py-2 xl:px-6 xl:py-3"
-            >
-              Register
-            </Link>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-gray-700 focus:outline-none p-2"
-            onClick={() => setIsOpen(!isOpen)}
+    <nav
+      className={`fixed w-full max-w-9xl z-50 transition-all duration-300
+        ${
+           scrolled
+             ? "bg-[#0b2f2b]/75 backdrop-blur-md shadow-[0_6px_30px_rgba(0,0,0,0.4)]"
+              : "bg-[#0b2f2b]/90"
+         }
+  `}
+    >
+      <div className="flex justify-between items-center px-6 md:px-8 py-3 md:py-2">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          {/* E-Summit Logo */}
+          <a
+            href="https://www.ecelliitk.org/esummit/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+            <img
+              src={Logo}
+              loading="lazy"
+              decoding="async"
+              alt="E-Summit Logo"
+              className="h-10 w-39.8 object-cover"
+            />
+          </a>
+
+          {/* Startup Expo Logo */}
+          <a
+            href="https://www.ecelliitk.org/expo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <img
+              src={expo}
+              loading="lazy"
+              decoding="async"
+              alt="Startup Expo Logo"
+              className="h-10 w-39.2 object-cover"
+            />
+          </a>
         </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="lg:hidden pb-4 space-y-3 pt-2">
-            {isHomePage ? (
-              <>
-                <a
-                  href="#home"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  About
-                </a>
-                <a
-                  href="#why-startup-expo"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Why Startup Expo
-                </a>
-                <a
-                  href="#startups"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Startups
-                </a>
-                <a
-                  href="#events"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Events
-                </a>
-                <a
-                  href="#contact"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Contact
-                </a>
-              </>
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          {isHomePage ? (
+            <>
+              <a
+                href="#home"
+                className="text-white hover:text-primary-600 transition-colors text-sm xl:text-base"
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                className="text-white hover:text-primary-600 transition-colors text-sm xl:text-base"
+              >
+                About
+              </a>
+              <a
+                href="#why-startup-expo"
+                className="text-white hover:text-primary-600 transition-colors text-sm xl:text-base"
+              >
+                Why StartupExpo
+              </a>
+              <a
+                href="#stall-slabs"
+                className="text-white hover:text-primary-600 transition-colors text-sm xl:text-base"
+              >
+                Stall Slabs
+              </a>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/"
+                className="text-white hover:text-primary-600 transition-colors text-sm xl:text-base"
+              >
+                Home
+              </Link>
+              <Link
+                to="/explore-startups"
+                className="text-white hover:text-primary-600 transition-colors text-sm xl:text-base"
+              >
+                Explore Startups
+              </Link>
+            </>
+          )}
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfYH0cgh2X3uN7MxD1h8clbWI8p4LszTQgzhwxgIYiQVkjGtw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              px-5 py-1.5
+              rounded-md
+              font-semibold text-sm text-white
+              bg-gradient-to-b from-[#3bd2c1] to-[#1f8f82]
+              shadow-[0_4px_10px_rgba(0,0,0,0.4)]
+              hover:from-[#4fe6d5] hover:to-[#2ba99a]
+              transition-all duration-300
+              hover:scale-[1.08] active:scale-[0.97]
+            "
+          >
+            Register
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-white focus:outline-none p-2"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {isOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <>
-                <Link
-                  to="/"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/explore-startups"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Explore Startups
-                </Link>
-              </>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
-            <Link
-              to="/signin"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Sign In
-            </Link>
-            <Link
-              to="/register"
-              className="btn-primary w-full block text-center"
-              onClick={() => setIsOpen(false)}
-            >
-              Register
-            </Link>
-          </div>
-        )}
+          </svg>
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="lg:hidden pb-4 space-y-3 pt-2 bg-black/90 backdrop-blur-md">
+          {isHomePage ? (
+            <>
+              <a
+                href="#home"
+                className="block text-white hover:text-primary-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                className="block text-white hover:text-primary-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </a>
+              <a
+                href="#contact"
+                className="block text-white hover:text-primary-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact Us
+              </a>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/"
+                className="block text-white hover:text-primary-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/explore-startups"
+                className="block text-white hover:text-primary-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Explore Startups
+              </Link>
+            </>
+          )}
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfYH0cgh2X3uN7MxD1h8clbWI8p4LszTQgzhwxgIYiQVkjGtw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary w-full block text-center"
+            onClick={() => setIsOpen(false)}
+          >
+            Register
+          </a>
+        </div>
+      )}
     </nav>
   );
 };
