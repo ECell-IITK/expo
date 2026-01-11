@@ -1,4 +1,4 @@
-import{r,j as e,e as t}from"./index-mgKCi6OX.js";const n="/expo/assets/typefaceSVG-ojCu9mPf.svg",a="/expo/assets/expolanding1-DW4k0omY.png",o=()=>{const s=r.useRef(null);return e.jsxs("section",{ref:s,id:"home",className:"relative min-h-screen flex items-center justify-center text-white overflow-hidden",children:[e.jsx("img",{src:a,alt:"Startup Expo Stalls",loading:"lazy",decoding:"async",className:`\r
+import{r,j as e,e as t}from"./index-C43FgXUk.js";const n="/expo/assets/typefaceSVG-ojCu9mPf.svg",a="/expo/assets/expolanding1-DW4k0omY.png",o=()=>{const s=r.useRef(null);return e.jsxs("section",{ref:s,id:"home",className:"relative min-h-screen flex items-center justify-center text-white overflow-hidden",children:[e.jsx("img",{src:a,alt:"Startup Expo Stalls",loading:"lazy",decoding:"async",className:`\r
           absolute inset-0\r
           w-full h-full\r
           object-cover\r
@@ -12,14 +12,14 @@ import{r,j as e,e as t}from"./index-mgKCi6OX.js";const n="/expo/assets/typefaceS
             gap-4 sm:gap-6\r
             -mt-12 sm:mt-12\r
           `,children:[e.jsx("img",{src:n,alt:"E-Summit 2026",loading:"lazy",decoding:"async",className:`\r
-              h-20 sm:h-30 md:h-32 lg:h-34 2xl:h-44 -mt-4\r
+              h-22 sm:h-30 md:h-32 lg:h-34 2xl:h-44 -mt-4\r
               object-contain\r
             `}),e.jsx("img",{src:t,alt:"Startup Expo",loading:"lazy",decoding:"async",className:`\r
               h-28 sm:h-36 md:h-52 lg:h-58 \r
               object-contain\r
               drop-shadow-[0_0_40px_rgba(0,0,0,0.65)]\r
             `})]}),e.jsx("div",{className:"text-center mt-4",children:e.jsx("p",{className:`\r
-              text-[12px] sm:text-sm md:text-[34px]\r
+              text-[24px] sm:text-sm md:text-[34px]\r
               tracking-[0.28em]\r
               uppercase\r
               font-semibold\r
